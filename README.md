@@ -83,8 +83,7 @@ This tool was fully coded by Gemini CLI 2.5 Flash & 2.5 Pro.
 
 ### Known Issues
 - False positives:
-In my tests, the script flagged up to 10% of the objects as "Not used" in the charts, while they were (althgouh not always directly).
-So it is imperfect in its current version.
+In my tests, the script flagged about 5% of the objects as "Not used" in the charts, while they were in use (althgouh most of the time, they were indirectly in use). So it is imperfect in its current version and could use some additional work on dependencies identification.
 
 - False negatives:
 There may be objects in the semantic layer that are not being used in charts, but were marked as "Used"; this is an unknown as I have not checked for such cases yet.
