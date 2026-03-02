@@ -36,6 +36,12 @@ def ask_to_proceed(step_name, description):
 
 def main():
     """Main orchestrator function."""
+    # Ensure outputs directory exists
+    outputs_dir = os.path.join(os.path.dirname(__file__), 'outputs')
+    if not os.path.exists(outputs_dir):
+        print(f"Creating outputs directory at {outputs_dir}...")
+        os.makedirs(outputs_dir)
+
     print("\n" + "="*80)
     print("⚠️ Welcome to the Semantic Layer Cleanup Pipeline! ⚠️")
     print("This script will guide you through identifying and commenting out unused fields.")
